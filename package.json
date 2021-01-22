@@ -1,0 +1,25 @@
+{
+    "name": "tinkerino",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "set NODE_ENV=development&&electron .",
+        "dist": "electron-builder -w --x64",
+        "packer": "electron-builder --dir"
+    },
+    "author": "Riza Hawkeye",
+    "license": "ISC",
+    "devDependencies": {
+        "electron-nightly": "^13.0.0-nightly.20210114",
+        "electron-packager": "^15.2.0",
+        "electron-reload": "^1.5.0",
+        "electron-reloader": "^1.2.0",
+        "electron-builder": "^22.9.1"
+    },
+    "build": {
+        "win": {
+            "icon": "images/icon.ico"
+        }
+    }
+}

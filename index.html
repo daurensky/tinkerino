@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="fontawesome.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div class="menubar">
+            <p>Calculated on Tinker (рассчитано на мастерицу)</p>
+            <div class="btns">
+                <button class="tray" id="tray">в трей</button>
+                <button class="hide" id="hide">
+                    <i class="far fa-minus"></i>
+                </button>
+                <button class="close" id="close">
+                    <i class="far fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div class="wrapper">
+            <table>
+                <tr>
+                    <td colspan="4" style="position: relative">
+                        <p class="result-preview"></p>
+                        <input type="text" class="display-label" />
+                        <input type="hidden" class="display-calc" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="btn sqrt-btn">
+                        <p><i class="far fa-square-root-alt"></i></p>
+                        <img src="images/LaserRed.png" alt="Laser" />
+                    </td>
+                    <td class="btn input-btn" data-value="%">
+                        <p><i class="far fa-percent"></i></p>
+                        <img src="images/Heat.png" alt="Heat" />
+                    </td>
+                    <td class="btn input-btn" data-value="/">
+                        <p><i class="far fa-divide"></i></p>
+                        <img src="images/MarchImmortal.png" alt="Rearm" />
+                    </td>
+                    <td class="btn backspace-btn">
+                        <p><i class="far fa-backspace"></i></p>
+                        <img src="images/Rearm.png" alt="Rearm" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="btn input-btn" data-value="1">
+                        <p>1</p>
+                        <img src="images/LaserRed.png" alt="Laser" />
+                    </td>
+                    <td class="btn input-btn" data-value="2">
+                        <p>2</p>
+                        <img src="images/Heat.png" alt="Heat" />
+                    </td>
+                    <td class="btn input-btn" data-value="3">
+                        <p>3</p>
+                        <img src="images/MarchImmortal.png" alt="March" />
+                    </td>
+                    <td class="btn input-btn" data-value="+">
+                        <p><i class="far fa-plus"></i></p>
+                        <img src="images/Rearm.png" alt="Rearm" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="btn input-btn" data-value="4">
+                        <p>4</p>
+                        <img src="images/LaserRed.png" alt="Laser" />
+                    </td>
+                    <td class="btn input-btn" data-value="5">
+                        <p>5</p>
+                        <img src="images/Heat.png" alt="Heat" />
+                    </td>
+                    <td class="btn input-btn" data-value="6">
+                        <p>6</p>
+                        <img src="images/MarchImmortal.png" alt="March" />
+                    </td>
+                    <td class="btn input-btn" data-value="-">
+                        <p><i class="far fa-minus"></i></p>
+                        <img src="images/Rearm.png" alt="Rearm" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="btn input-btn" data-value="7">
+                        <p>7</p>
+                        <img src="images/LaserRed.png" alt="Laser" />
+                    </td>
+                    <td class="btn input-btn" data-value="8">
+                        <p>8</p>
+                        <img src="images/Heat.png" alt="Heat" />
+                    </td>
+                    <td class="btn input-btn" data-value="9">
+                        <p>9</p>
+                        <img src="images/MarchImmortal.png" alt="March" />
+                    </td>
+                    <td class="btn input-btn" data-value="*">
+                        <p><i class="far fa-times"></i></p>
+                        <img src="images/Rearm.png" alt="Rearm" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="btn clear-btn">
+                        <p><i class="far fa-eraser"></i></p>
+                        <img src="images/Matrix.png" alt="Matrix" />
+                    </td>
+                    <td class="btn input-btn" data-value="0">
+                        <p>0</p>
+                        <img src="images/Matrix.png" alt="Matrix" />
+                    </td>
+                    <td class="btn input-btn" data-value=".">
+                        <p>.</p>
+                        <img src="images/Matrix.png" alt="Matrix" />
+                    </td>
+                    <td class="btn equal-btn">
+                        <p><i class="far fa-equals"></i></p>
+                        <img src="images/Matrix.png" alt="Matrix" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
