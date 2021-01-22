@@ -147,32 +147,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const { remote } = require('electron')
     const hide = document.getElementById('hide')
     const close = document.getElementById('close')
-    const tray = document.getElementById('tray')
-
-    tray.addEventListener('click', () => {
-        const win = remote.getCurrentWindow()
-        const tray = new remote.Tray('./images/icon.ico')
-        const contextMenu = remote.Menu.buildFromTemplate([
-            {
-                label: 'Открыть (не закрыть)',
-                click: () => {
-                    win.show()
-                    tray.destroy()
-                },
-            },
-            {
-                label: 'Закрыть',
-                click: win.close,
-            },
-        ])
-        tray.setToolTip('Calculated on Tinker')
-        tray.setContextMenu(contextMenu)
-        tray.addListener('click', () => {
-            win.show()
-            tray.destroy()
-        })
-        win.hide()
-    })
 
     hide.addEventListener('click', () => {
         const win = remote.getCurrentWindow()

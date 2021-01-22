@@ -1,19 +1,19 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
 
-// const env = process.env.NODE_ENV
+const env = process.env.NODE_ENV
 
 // If development environment
-// if (env === 'development') {
-//     try {
-//         require('electron-reloader')(module, {
-//             debug: true,
-//             watchRenderer: true,
-//         })
-//     } catch (_) {
-//         console.log('Error')
-//     }
-//
+if (env === 'development') {
+    try {
+        require('electron-reloader')(module, {
+            debug: true,
+            watchRenderer: true,
+        })
+    } catch (_) {
+        console.log('Error')
+    }
+}
 
 const createWindow = () => {
     const win = new BrowserWindow({
@@ -28,7 +28,8 @@ const createWindow = () => {
         title: 'Calculated on Tinker',
     })
 
-    // env === 'development' && win.webContents.openDevTools()
+    env === 'development' && win.webContents.openDevTools()
+    win.setResizable(false)
     win.removeMenu()
     win.loadFile('index.html')
 }
